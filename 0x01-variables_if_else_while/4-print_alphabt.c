@@ -9,9 +9,9 @@ int main(void)
 
 	for (letters = 'a' ; letters <= 'z' ; letters++)
 	{
-		if (letters != q && letters != e)
+		if (letters != 'q' && letters != 'e')
 		{
-			putchat(letters);
+			putchar(letters);
 		}
 	}
 	putchar('\n');
