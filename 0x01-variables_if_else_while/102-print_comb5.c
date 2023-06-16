@@ -12,7 +12,7 @@ int main(void)
 		int x1 = x / 10;
 		int x2 = x % 10;
 
-		for (y = x ; y <= 99)
+		for (y = x ; y <= 99 ; y++)
 		{
 			int y1 = y / 10;
 			int y2 = y % 10;
