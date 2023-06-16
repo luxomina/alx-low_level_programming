@@ -10,7 +10,8 @@ int main(void)
 
 	if (lowercase <= 'z' && uppercase <= 'Z')
 	{
-		putchar(lowercase, uppercase);
+		putchar(lowercase);
+		putchar(uppercase);
 	}
 	putchar('\n');
 	return (0);
