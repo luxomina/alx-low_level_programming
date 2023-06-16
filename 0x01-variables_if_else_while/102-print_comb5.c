@@ -19,6 +19,7 @@ int main(void)
 
 			putchar('0' + x1);
 			putchar('0' + x2);
+			putchar(' ')
 			putchar('0' + y1);
 			putchar('0' + y2);
 			if (x != 99 || y != 99)
