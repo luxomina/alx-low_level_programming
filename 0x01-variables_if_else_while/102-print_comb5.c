@@ -22,7 +22,7 @@ int main(void)
 			putchar(' ');
 			putchar('0' + y1);
 			putchar('0' + y2);
-			if (x != 99 || y != 99)
+			if (x != 99 && y != 99)
 			{
 				putchar(',');
 				putchar(' ');
