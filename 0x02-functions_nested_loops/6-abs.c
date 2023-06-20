@@ -11,5 +11,5 @@ if (x < 0)
 return (x * -1);
 }
 _putchar('\n');
-return (n);
+return (x);
 }
