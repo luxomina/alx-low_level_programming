@@ -8,8 +8,8 @@ int _abs(int x)
 {
 if (x < 0)
 {
-return (x * -1);
+x = (-1) * x;
+return (x);
 }
 _putchar('\n');
-return (x);
 }
