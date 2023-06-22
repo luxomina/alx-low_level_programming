@@ -10,7 +10,7 @@ int height, base;
 
 if (size <= 0)
 {
-_putchar('\n')
+_putchar('\n');
 }
 else
 {
