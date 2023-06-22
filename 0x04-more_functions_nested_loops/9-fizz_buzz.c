@@ -5,21 +5,20 @@
  */
 int main(void)
 {
-int x;
-for (x = 1; x <= 100; x++)
+int i;
+for (i = 1; i <= 100; i++)
 {
-if (x % 3 == 0 && !(x % 5 == 0))
-printf("Fizz");
-if (x % 5 == 0 && !(x % 3 == 0))
-printf("Buzz");
-if (x % 3 == 0 && x % 5 == 0)
+if (i % 15 == 0)
 printf("FizzBuzz");
+else if (i % 3 == 0)
+printf("Fizz");
+else if (i % 5 == 0)
+printf("Buzz");
 else
-printf("%d", x);
-if (x != 100)
+printf("%i", i);
+if (i < 100)
 printf(" ");
-else
-printf("\n");
 }
+printf("\n");
 return (0);
 }
