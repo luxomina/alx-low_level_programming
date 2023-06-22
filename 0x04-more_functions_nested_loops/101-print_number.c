@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * print_number - Entry point
- *@n: prints an integer
+ * main - Entry poin
  * Return: Always 0 (Success)
  */
-void print_number(int n)
+int main(void)
 {
-unsigned int num = n;
-
-if (n < 0)
-{
-_putchar('_');
-num = -num;
-}
-if ((num / 10) > 0)
-print_number(num / 10);
-_putchar((num % 10) + '0');
+print_number(98);
+_putchar('\n');
+print_number(402);
+_putchar('\n');
+print_number(1024);
+_putchar('\n');
+print_number(0);
+_putchar('\n');
+print_number(-98);
+_putchar('\n');
+return (0);
 }
