@@ -1,26 +1,35 @@
 #include "main.h"
-/**
- * cap_string - Entry point
- *@s: capitalizes all words of a string
- * Return: Always 0 (Success)
- */
-char *cap_string(char *s)
-{
-char *ptr = s;
-int foundDelimit = 1;
 
-while (*s)
+/**
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be capitalized.
+ *
+ * Return: A pointer to the changed string.
+ */
+char *cap_string(char *str)
 {
-if (isDelimiter(*s))
-foundDelimit = 1;
-else if (isLower(*s) && foundDelimit)
+int index = 0;
+
+while (str[index])
 {
-*s -= 32;
-foundDelimit = 0;
+while (!(str[index] >= 'a' && str[index] <= 'z'))
+index++;
+if (str[index - 1] == ' ' ||
+str[index - 1] == '\t' ||
+str[index - 1] == '\n' ||
+str[index - 1] == ',' ||
+str[index - 1] == ';' ||
+str[index - 1] == '.' ||
+str[index - 1] == '!' ||
+str[index - 1] == '?' ||
+str[index - 1] == '"' ||
+str[index - 1] == '(' ||
+str[index - 1] == ')' ||
+str[index - 1] == '{' ||
+str[index - 1] == '}' ||
+index == 0)
+str[index] -= 32;
+index++;
 }
-else
-foundDelimit = 0;
-s++;
-}
-return (ptr);
+return (str);
 }
